@@ -410,7 +410,6 @@ def run_program():
             player_rect.x -= data_module.speed
         if keys[pygame.K_d] and player_rect.x<=2*data_module.width-65:
             player_rect.x += data_module.speed
-            print(player_rect.x,player_rect.y)
         # 计算摄像机位置
         camera_x = player_rect.x - data_module.width//2
         camera_y = player_rect.y - data_module.height//2
