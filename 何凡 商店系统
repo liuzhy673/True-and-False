@@ -399,7 +399,7 @@ def run_store(resurrect,health,attack,defense):
                                     screen.blit(show_coins, (25, 35))
                                     pygame.display.flip()  # 更新屏幕显示
                                     break
-                        if button['texts'][0] == "武器防御" and coins_number >= 150:
+                        if button['texts'][0] == "武器防御" and coins_number >= 200:
                             buying = True
                             while buying:
                                 screen.blit(background_image, (0, 0))
@@ -435,7 +435,7 @@ def run_store(resurrect,health,attack,defense):
                                 screen.blit(textwritten1, (335, 142))
                                 textwritten2 = tiny_font.render("高强度的伤害。", True, BLACK)
                                 screen.blit(textwritten2, (335, 162))
-                                textwritten3 = tiny_font.render("售价：150", True, BLACK)
+                                textwritten3 = tiny_font.render("售价：200", True, BLACK)
                                 screen.blit(textwritten3, (335, 182))
                                 screen.blit(yes, (480, 210))  # 确保 yes 图片已定义
                                 screen.blit(no, (520, 210))  # 确保 no 图片已定义
@@ -449,7 +449,7 @@ def run_store(resurrect,health,attack,defense):
                                         mouse_x, mouse_y = event.pos
                                         if (continue_area1[0] <= mouse_x <= continue_area1[0] + continue_area1[2] and
                                                 continue_area1[1] <= mouse_y <= continue_area1[1] + continue_area1[3]):
-                                            coins_number = coin_number.decrease_coin(150)  # 减少100金币
+                                            coins_number = coin_number.decrease_coin(200)  # 减少100金币
                                             defense+=5
                                             buying = False
                                         elif (continue_area2[0] <= mouse_x <= continue_area2[0] + continue_area2[2] and
