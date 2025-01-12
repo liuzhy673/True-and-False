@@ -481,7 +481,7 @@ def fight2(window,win_width,win_height,health,attack,defense,resurrect,number_gu
                         pygame.time.wait(400)
                         window.blit(background.subsurface(pygame.Rect(win_width/10 + 240,win_height*2/7 - 50,230,200)),(win_width/10 + 240,win_height*2/7 - 50))
                         pygame.display.update()
-                        act_fire_enermy = pygame.image.load('C:\\picture\\fire_enermy.png')
+                        act_fire_enermy = pygame.image.load('C:\\game\\picture\\fire_enermy.png')
                         act_fire1_enermy = pygame.transform.scale(act_fire_enermy,(elite_enermy.choice()[0],elite_enermy.choice()[1]))
                         window.blit(act_fire1_enermy,(elite_enermy.x1,elite_enermy.y1 - elite_enermy.choice()[1]/2))
                         pygame.display.update()
